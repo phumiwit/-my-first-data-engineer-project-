@@ -5,6 +5,13 @@
 # Datapipeline
 <img src = 'images/retail data (1).jpg'>
 
+# การเตรียมการสำหรับ Datapipeline 
+1.สร้าง cloud storage 2 bucket 1.retail-data-forcleansing 2.spark-job-cleansingdata (จำลองการแยกเป็นส่วนๆ อาจไม่ใช best practice) \
+อัพโหลด retail.csv ไปที่ retail-data-forcleansing bucket และ อัพโหลด tranformation.py ไปที่ spark-job-cleansingdata \
+<img src = 'images/Capture9.PNG'>
+
+<img src = 'images/Capture10.PNG'>
+
 
 # Dataset ที่ใช้
 ผมได้ใช้ Dataset จาก 
@@ -19,7 +26,7 @@ https://raw.githubusercontent.com/databricks/Spark-The-Definitive-Guide/master/d
 2.เสร็จแล้วสร้าง dataproc cluster โดยใช้ DataprocCreateClusterOperator โดยสร้าง cluster ตาม config ที่ได้บันทึกไว้ใน sparkjob.py \
 3.ทำการทำความสะอาดข้อมูลตามขั้นตอนใน cleansing_data.ipynb \
 3.1 เริ่มจากการดึงข้อมูลใน retail.csv ใน retail-data-forcleansing bucket \
-3.2 ทำการดึง sparkjob.py ที่อยู่ใน spark-job-cleansingdata bucket และใช้ DataprocSubmitJobOperator เพื่อรัน pyspark โดยทำความสะอาดข้อมูลตามลำดับขั้นตอน \
+3.2 ทำการดึง tranformation.py ที่อยู่ใน spark-job-cleansingdata bucket และใช้ DataprocSubmitJobOperator เพื่อรัน pyspark โดยทำความสะอาดข้อมูลตามลำดับขั้นตอน \
 3.3 บันทึกข้อมูลในที่ทำความสะอาดแล้วใน folder data ที่ cloud composer สร้างขึ้น \
 4.ลบ dataproc cluster โดยใช้ DataprocDeleteClusterOperator \
 5.ทำการย้ายข้อมูลใน data ไปสู่ bigquery โดยสร้าง schema ของ table ใน bigquery ตาม config ใน GCSToBigQueryOperator 
