@@ -8,12 +8,14 @@ https://raw.githubusercontent.com/databricks/Spark-The-Definitive-Guide/master/d
 ซึ่งขึ้นตอนการทำความสะอาดข้อมูลสามารถดูได้ที่ https://colab.research.google.com/drive/1uSM2Xirctb1LBwOgNQiSky7WkWqP6_Kh?usp=sharing และสามารถ Download **cleansing_data.ipynb** ใน github ได้เลยครับ 
 # Datapipeline
 <img src = 'images/retail data (1).jpg'>
+
 # การเตรียมการสำหรับ Datapipeline 
 ## 1.สร้าง cloud storage 2 bucket 
 1.retail-data-forcleansing 2.spark-job-cleansingdata (จำลองการแยกเป็นส่วนๆ อาจไม่ใช best practice) \
 อัพโหลด retail.csv ไปที่ retail-data-forcleansing bucket และ อัพโหลด tranformation.py ไปที่ spark-job-cleansingdata \
 <img src = 'images/Capture9.PNG'>
 <img src = 'images/Capture10.PNG'>
+
 ## 2. create cloud composer
 <img src = 'images/Capture2.PNG'>
 ทำการ upload sparkjob.py ไปที่ folder Dag ใน bucket ที่สร้างขึ้นอัตโนมัติเมื่อสร้าง composer (bucket ที่เชื่อมกับ composer ในการใส่ Dag เพื่อแสดงใน airflow) 
@@ -25,6 +27,8 @@ https://raw.githubusercontent.com/databricks/Spark-The-Definitive-Guide/master/d
 <img src = 'images/Capture5.PNG'>
 
 1.เริ่มจากการ print date โดยใช้ BashOperator จาก sparkjob.py เป็นการแสดงวันที่ออกทาง log ใน cloud composer หรือ apache airflow \
+<img src = 'images/Capture14.PNG'>
+
 2.เสร็จแล้วสร้าง dataproc cluster โดยใช้ DataprocCreateClusterOperator โดยสร้าง cluster ตาม config ที่ได้บันทึกไว้ใน sparkjob.py \
 3.ทำการทำความสะอาดข้อมูลตามขั้นตอนใน cleansing_data.ipynb \
 3.1 เริ่มจากการดึงข้อมูลใน retail.csv ใน retail-data-forcleansing bucket \
