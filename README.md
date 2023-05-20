@@ -30,6 +30,9 @@ https://raw.githubusercontent.com/databricks/Spark-The-Definitive-Guide/master/d
 <img src = 'images/Capture14.PNG'>
 
 2.เสร็จแล้วสร้าง dataproc cluster โดยใช้ DataprocCreateClusterOperator โดยสร้าง cluster ตาม config ที่ได้บันทึกไว้ใน sparkjob.py \
+<img src = 'images/Capture16.PNG'>
+<img src = 'images/Capture15.PNG'>
+
 3.ทำการทำความสะอาดข้อมูลตามขั้นตอนใน cleansing_data.ipynb \
 3.1 เริ่มจากการดึงข้อมูลใน retail.csv ใน retail-data-forcleansing bucket \
 3.2 ทำการดึง tranformation.py ที่อยู่ใน spark-job-cleansingdata bucket และใช้ DataprocSubmitJobOperator เพื่อรัน pyspark โดยทำความสะอาดข้อมูลตามลำดับขั้นตอน \
