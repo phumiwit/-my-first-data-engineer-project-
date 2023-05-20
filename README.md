@@ -13,7 +13,7 @@ https://raw.githubusercontent.com/databricks/Spark-The-Definitive-Guide/master/d
 ซึ่งขึ้นตอนการทำความสะอาดข้อมูลสามารถดูได้ที่ https://colab.research.google.com/drive/1uSM2Xirctb1LBwOgNQiSky7WkWqP6_Kh?usp=sharing และสามารถ Download **cleansing_data.ipynb** ใน github ได้เลยครับ 
 
 # การทำงานของ Datapipeline
-<img src = 'images/Capture5.jpg'>
+<img src = 'images/Capture5.PNG'>
 
 1.เริ่มจากการ print date โดยใช้ BashOperator จาก sparkjob.py เป็นการแสดงวันที่ออกทาง log ใน cloud composer หรือ apache airflow
 2.เสร็จแล้วสร้าง dataproc cluster โดยใช้ DataprocCreateClusterOperator โดยสร้าง cluster ตาม config ที่ได้บันทึกไว้ใน sparkjob.py
