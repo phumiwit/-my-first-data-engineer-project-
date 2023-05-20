@@ -6,11 +6,20 @@
 <img src = 'images/retail data (1).jpg'>
 
 # การเตรียมการสำหรับ Datapipeline 
-## 1.สร้าง cloud storage 2 bucket \
+## 1.สร้าง cloud storage 2 bucket 
 1.retail-data-forcleansing 2.spark-job-cleansingdata (จำลองการแยกเป็นส่วนๆ อาจไม่ใช best practice) \
 อัพโหลด retail.csv ไปที่ retail-data-forcleansing bucket และ อัพโหลด tranformation.py ไปที่ spark-job-cleansingdata \
 <img src = 'images/Capture9.PNG'>
 <img src = 'images/Capture10.PNG'>
+## 2. create cloud composer
+<img src = 'images/Capture2.PNG'>
+
+ทำการ upload sparkjob.py ไปที่ Dag ใน bucket ที่สร้างขึ้นอัตโนมัติเมื่อสร้าง composer (bucket ที่เชื่อมกับ composer ในการใส่ Dag เพื่อแสดงใน airflow) \
+<img src = 'images/Capture11.PNG'>
+
+ตัวของ Dag จะแสดงใน UI ของ apache airflow
+<img src = 'images/Capture6.PNG'>
+
 
 
 # Dataset ที่ใช้
