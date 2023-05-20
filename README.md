@@ -20,6 +20,7 @@ https://raw.githubusercontent.com/databricks/Spark-The-Definitive-Guide/master/d
 <img src = 'images/Capture11.PNG'>
 ตัวของ Dag จะแสดงใน UI ของ apache airflow 
 <img src = 'images/Capture6.PNG'>
+
 # การทำงานของ Datapipeline 
 <img src = 'images/Capture5.PNG'>
 1.เริ่มจากการ print date โดยใช้ BashOperator จาก sparkjob.py เป็นการแสดงวันที่ออกทาง log ใน cloud composer หรือ apache airflow \
