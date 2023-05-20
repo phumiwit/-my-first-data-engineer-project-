@@ -4,6 +4,8 @@
 
 # Datapipeline
 <img src = 'images/retail data (1).jpg'>
+
+
 # Dataset ที่ใช้
 ผมได้ใช้ Dataset จาก https://raw.githubusercontent.com/databricks/Spark-The-Definitive-Guide/master/data/retail-data/all/online-retail-dataset.csv 
 ซึ่งเป็นข้อมูล Online retail เนื่องจากมีข้อมูลให้ทำความสะอาดข้อมูลหลากหลายรูปแบบ ในการทำความสะอาดข้อมูลนั้นผมได้สมมุติ requirements ต่างๆขึ้นมาในการทำความสะอาดข้อมูลตาม requirement นั้นๆ
