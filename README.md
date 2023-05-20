@@ -19,7 +19,7 @@ https://raw.githubusercontent.com/databricks/Spark-The-Definitive-Guide/master/d
 <img src = 'images/Capture2.PNG'>
 ทำการ upload sparkjob.py ไปที่ folder Dag ใน bucket ที่สร้างขึ้นอัตโนมัติเมื่อสร้าง composer (bucket ที่เชื่อมกับ composer ในการใส่ Dag เพื่อแสดงใน airflow) 
 <img src = 'images/Capture11.PNG'>
-ตัวของ Dag จะแสดงใน UI ของ apache airflow 
+ตัวของ Dag จะแสดงใน UI ของ apache airflow \
 <img src = 'images/Capture6.PNG'>
 
 # การทำงานของ Datapipeline
