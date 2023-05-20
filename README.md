@@ -9,7 +9,6 @@
 1.สร้าง cloud storage 2 bucket 1.retail-data-forcleansing 2.spark-job-cleansingdata (จำลองการแยกเป็นส่วนๆ อาจไม่ใช best practice) \
 อัพโหลด retail.csv ไปที่ retail-data-forcleansing bucket และ อัพโหลด tranformation.py ไปที่ spark-job-cleansingdata \
 <img src = 'images/Capture9.PNG'>
-
 <img src = 'images/Capture10.PNG'>
 
 
