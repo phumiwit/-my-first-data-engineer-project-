@@ -56,12 +56,12 @@ config สำหรับ sparkjob \
 ตาม config ใน GCSToBigQueryOperator \
 <img src = 'images/Capture20.PNG'>
 
-ได้ผลลัพธ์ตาราง \
+ได้ผลลัพธ์เป็นตารางที่มี column และ datatype ดังนี้ \
 <img src = 'images/Capture7.PNG'>
 
 โดยมีตัวอย่างข้อมูลในตาราง \
 <img src = 'images/Capture13.PNG'>
 
-## รวมการทำงานของ operator ทั้งหมดดังรูป
+รวมการทำงานของ operator ทั้งหมด \
 <img src = 'images/Capture8.PNG'>
 
