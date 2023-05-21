@@ -52,7 +52,8 @@ config สำหรับ sparkjob \
 4.ลบ dataproc cluster โดยใช้ DataprocDeleteClusterOperator \
 <img src = 'images/Capture19.PNG'>
 
-5.ทำการย้ายข้อมูลใน data ไปสู่ bigquery โดยสร้าง schema ของ table ใน bigquery ตาม config ใน GCSToBigQueryOperator 
+5.ทำการย้ายข้อมูลใน data ไปสู่ bigquery โดยสร้าง schema ของ table ใน bigquery \
+ตาม config ใน GCSToBigQueryOperator 
 <img src = 'images/Capture20.PNG'>
 
 ได้ผลลัพธ์ตารางดังรูป
