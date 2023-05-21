@@ -53,13 +53,13 @@ config สำหรับ sparkjob \
 <img src = 'images/Capture19.PNG'>
 
 5.ทำการย้ายข้อมูลใน data ไปสู่ bigquery โดยสร้าง schema ของ table ใน bigquery \
-ตาม config ใน GCSToBigQueryOperator 
+ตาม config ใน GCSToBigQueryOperator \
 <img src = 'images/Capture20.PNG'>
 
-ได้ผลลัพธ์ตารางดังรูป
+ได้ผลลัพธ์ตารางดังรูป \
 <img src = 'images/Capture7.PNG'>
 
-โดยมีตัวอย่างข้อมูลในตารางดังรูป
+โดยมีตัวอย่างข้อมูลในตารางดังรูป \
 <img src = 'images/Capture13.PNG'>
 
 ## รวมการทำงานของ operator ทั้งหมดดังรูป
