@@ -44,7 +44,8 @@ DataprocSubmitJobOperator สำหรับการ submitsparkjob \
 <img src = 'images/Capture17.PNG'>
 
 config สำหรับ sparkjob \
-<img src = 'images/Capture17.PNG'>
+<img src = 'images/Capture18.PNG'>
+
 3.3 บันทึกข้อมูลในที่ทำความสะอาดแล้วใน folder data ที่ cloud composer สร้างขึ้น \
 4.ลบ dataproc cluster โดยใช้ DataprocDeleteClusterOperator \
 5.ทำการย้ายข้อมูลใน data ไปสู่ bigquery โดยสร้าง schema ของ table ใน bigquery ตาม config ใน GCSToBigQueryOperator 
