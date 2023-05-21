@@ -34,7 +34,7 @@ https://raw.githubusercontent.com/databricks/Spark-The-Definitive-Guide/master/d
 <img src = 'images/Capture15.PNG'>
 
 3.ทำการทำความสะอาดข้อมูลตามขั้นตอนใน cleansing_data.ipynb \
-3.1 เริ่มจากการดึงข้อมูลใน retail.csv ใน retail-data-forcleansing bucket \
+3.1 เริ่มจากการดึงข้อมูล retail.csv ใน retail-data-forcleansing bucket \
 3.2 ทำการดึง tranformation.py ที่อยู่ใน spark-job-cleansingdata bucket และใช้ DataprocSubmitJobOperator เพื่อรัน pyspark โดยทำความสะอาดข้อมูลตามลำดับขั้นตอน \
 3.3 บันทึกข้อมูลในที่ทำความสะอาดแล้วใน folder data ที่ cloud composer สร้างขึ้น \
 4.ลบ dataproc cluster โดยใช้ DataprocDeleteClusterOperator \
