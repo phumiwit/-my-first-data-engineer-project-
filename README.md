@@ -47,8 +47,20 @@ config สำหรับ sparkjob \
 <img src = 'images/Capture18.PNG'>
 
 3.3 บันทึกข้อมูลในที่ทำความสะอาดแล้วใน folder data ที่ cloud composer สร้างขึ้น \
+<img src = 'images/Capture4.PNG'>
+
 4.ลบ dataproc cluster โดยใช้ DataprocDeleteClusterOperator \
+<img src = 'images/Capture19.PNG'>
+
 5.ทำการย้ายข้อมูลใน data ไปสู่ bigquery โดยสร้าง schema ของ table ใน bigquery ตาม config ใน GCSToBigQueryOperator 
+<img src = 'images/Capture20.PNG'>
 
+ได้ผลลัพธ์ตารางดังรูป
+<img src = 'images/Capture7.PNG'>
 
+โดยมีตัวอย่างข้อมูลในตารางดังรูป
+<img src = 'images/Capture13.PNG'>
+
+## รวมการทำงานของ operator ทั้งหมดดังรูป
+<img src = 'images/Capture8.PNG'>
 
