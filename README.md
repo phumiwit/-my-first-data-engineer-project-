@@ -39,7 +39,12 @@ https://raw.githubusercontent.com/databricks/Spark-The-Definitive-Guide/master/d
 
 3.ทำการทำความสะอาดข้อมูลตามขั้นตอนใน cleansing_data.ipynb \
 3.1 เริ่มจากการดึงข้อมูล retail.csv ใน retail-data-forcleansing bucket \
-3.2 ทำการดึง tranformation.py ที่อยู่ใน spark-job-cleansingdata bucket และใช้ DataprocSubmitJobOperator เพื่อรัน pyspark โดยทำความสะอาดข้อมูลตามลำดับขั้นตอน \
+3.2 ทำการดึง tranformation.py ที่อยู่ใน spark-job-cleansingdata bucket และใช้ DataprocSubmitJobOperator ตาม config ที่ได้กำหนดเพื่อรัน pyspark โดยทำความสะอาดข้อมูลตามลำดับขั้นตอน \
+DataprocSubmitJobOperator สำหรับการ submitsparkjob \
+<img src = 'images/Capture17.PNG'>
+
+config สำหรับ sparkjob \
+<img src = 'images/Capture17.PNG'>
 3.3 บันทึกข้อมูลในที่ทำความสะอาดแล้วใน folder data ที่ cloud composer สร้างขึ้น \
 4.ลบ dataproc cluster โดยใช้ DataprocDeleteClusterOperator \
 5.ทำการย้ายข้อมูลใน data ไปสู่ bigquery โดยสร้าง schema ของ table ใน bigquery ตาม config ใน GCSToBigQueryOperator 
